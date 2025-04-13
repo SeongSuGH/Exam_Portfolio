@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.root{    
+    background-image:linear-gradient(to top, black, rgba(0, 0, 0, 0.473)), url(images/Placehoilder.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* top section */
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: #0b2e33;
+    gap: 6rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+i{
+    color: white;
+    font-size:1rem;
+}
+/* end top section */
+
+/*section b*/
+.sec-b {
+    display: flex;
+    justify-content: center;
+    background-color: #b8e3e9;
+    gap: 25px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  
+.sec-b a {
+    font-size: 3rem 3rem;
+    background-color: #93b1b5;
+    padding: 15px;
+    border-radius: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.sec-b a:hover {
+    color: white;
+    transform: scale(1.5);
+    box-shadow: 0 0 15px var(--accent);
+}
+
+/* end section b*/
+
+@media (max-width: 900px) { 
+    .header {
+        gap: 3rem;
+    }  
+}
+@media (max-width: 500px) {   
+    .header {
+        gap: 2rem;
+    } 
+}
